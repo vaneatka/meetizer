@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+    
+        {% include 'partials/navbar.html.twig'%}
+    </header>
+
+    <section>
+        {% block content %}
+            {# aici se va incarca un continut #}
+        {% endblock %}
+    </section>
+    
+    {# aside(calendar)
+
+    section(events) 
+
+    footer(actions) #}
+
+    <footer>
+    {% block actions %}
+    {# content here #}
+    <a href="">Terms and Conditions </a>
+    {% endblock %}
+    </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+structure 
+    -arch - MVC (Model View Controller) +-
+    -composer
+    * packagist
+        -twig (templating)
+        -JSON + lazer - database - emulator DB
+
+
+database - Model
+logic - Controller
+templates - view
+
+why we use templating engine
+(twig, smarty, blade, volt)
+-optimized
+-more secure
+- caching
+- simple syntax
+- modularity (layout + partials/ reusable components)
+                        +layout, blocks, parent/child
+- universal
+
+packages key points
+* popularity
+* alive?
+* documentation/tutorials
+* installation/ getting started
+* configuration
+* usage

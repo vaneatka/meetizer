@@ -1,0 +1,23 @@
+{% extends '/layout.html.twig' %}
+
+
+
+{% block content %}
+<h1> Events List </h1>
+<h3>Check / find events...</h3>
+{{dump(data)}}
+{{data.money}}
+{{blahhh}}
+{% for key,i in data.list %}
+    <li>{{key|upper}}-{{i}}</li>
+{% endfor %}
+
+
+{% endblock %}
+
+
+
+{% block actions %}
+<a href='#'>Add Your event</a>
+<a href='#'>create an account</a>
+{% endblock %}
