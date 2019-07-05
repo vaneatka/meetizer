@@ -28,6 +28,11 @@ class ComposerStaticInit1eef3cdc105b2019d55bc5fdff57733c
         array (
             'Psr\\Log\\' => 8,
         ),
+        'L' => 
+        array (
+            'Lazer\\Test\\' => 11,
+            'Lazer\\' => 6,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -54,6 +59,14 @@ class ComposerStaticInit1eef3cdc105b2019d55bc5fdff57733c
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Lazer\\Test\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/greg0/lazer-database/tests/src',
+        ),
+        'Lazer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/greg0/lazer-database/src',
         ),
     );
 

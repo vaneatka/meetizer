@@ -17,7 +17,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2018-11-20T15:27:04+00:00",
+        "time": "2018-11-20 15:27:04",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -73,7 +73,7 @@
         "require-dev": {
             "symfony/http-kernel": "~2.8|~3.0"
         },
-        "time": "2017-07-28T15:27:31+00:00",
+        "time": "2017-07-28 15:27:31",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -127,7 +127,7 @@
         "suggest": {
             "ext-ctype": "For best performance"
         },
-        "time": "2019-02-06T07:57:58+00:00",
+        "time": "2019-02-06 07:57:58",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -187,7 +187,7 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2019-02-06T07:57:58+00:00",
+        "time": "2019-02-06 07:57:58",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -257,7 +257,7 @@
             "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
             "ext-symfony_debug": ""
         },
-        "time": "2017-07-28T06:06:09+00:00",
+        "time": "2017-07-28 06:06:09",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -322,7 +322,7 @@
             "symfony/debug": "^2.7",
             "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
         },
-        "time": "2019-06-18T15:37:11+00:00",
+        "time": "2019-06-18 15:37:11",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -364,6 +364,60 @@
         "homepage": "https://twig.symfony.com",
         "keywords": [
             "templating"
+        ]
+    },
+    {
+        "name": "greg0/lazer-database",
+        "version": "1.1.6",
+        "version_normalized": "1.1.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Greg0/Lazer-Database.git",
+            "reference": "e3d9a1bc7fc8aa789b512f7f8417a6cea6672c25"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Greg0/Lazer-Database/zipball/e3d9a1bc7fc8aa789b512f7f8417a6cea6672c25",
+            "reference": "e3d9a1bc7fc8aa789b512f7f8417a6cea6672c25",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "mikey179/vfsstream": "~1.6",
+            "phpunit/phpunit": "^5.6"
+        },
+        "time": "2018-11-10 14:52:21",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Lazer\\": "src/",
+                "Lazer\\Test\\": "tests/src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Grzegorz Kuźnik",
+                "email": "gerg0sz92@gmail.com",
+                "role": "Owner"
+            }
+        ],
+        "description": "PHP library to use JSON files like flat-file database",
+        "homepage": "https://github.com/Greg0/Lazer-Database",
+        "keywords": [
+            "Simple",
+            "database",
+            "db",
+            "file",
+            "flat",
+            "json",
+            "lazer"
         ]
     }
 ]

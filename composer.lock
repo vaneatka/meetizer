@@ -4,9 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "740b1dbbc992f95e605f2e6a5734c8b9",
-    "content-hash": "7050f7f6638c742dafeac077cd7505f4",
+    "hash": "584f94fbf91ff670195725cc06ede04f",
+    "content-hash": "f2760b6a85e201fe2cda6451e7f9efac",
     "packages": [
+        {
+            "name": "greg0/lazer-database",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Greg0/Lazer-Database.git",
+                "reference": "e3d9a1bc7fc8aa789b512f7f8417a6cea6672c25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Greg0/Lazer-Database/zipball/e3d9a1bc7fc8aa789b512f7f8417a6cea6672c25",
+                "reference": "e3d9a1bc7fc8aa789b512f7f8417a6cea6672c25",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.6",
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lazer\\": "src/",
+                    "Lazer\\Test\\": "tests/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grzegorz Kuźnik",
+                    "email": "gerg0sz92@gmail.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "PHP library to use JSON files like flat-file database",
+            "homepage": "https://github.com/Greg0/Lazer-Database",
+            "keywords": [
+                "Simple",
+                "database",
+                "db",
+                "file",
+                "flat",
+                "json",
+                "lazer"
+            ],
+            "time": "2018-11-10 14:52:21"
+        },
         {
             "name": "psr/log",
             "version": "1.1.0",
