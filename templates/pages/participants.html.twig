@@ -3,11 +3,13 @@
 
 
 {% block content %}
-<h1> Events List </h1>
-<h3>Check / find events...</h3>
+<h1> Participants List </h1>
+<h3>Check / find People...</h3>
 
-{% for i in events %}
-    <li>{{i.title}}</li>
+{{data.money}}
+{{blahhh}}
+{% for key,i in data.list %}
+    <li>{{key|upper}}-{{i}}</li>
 {% endfor %}
 
 
