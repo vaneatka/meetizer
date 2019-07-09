@@ -1,1 +1,1 @@
-{"last_id":0,"schema":{"id":"integer","name":"string","country":"string","city":"string","street":"string","number":"string"},"relations":{}}
+{"last_id":2,"schema":{"id":"integer","name":"string","country":"string","city":"string","street":"string","number":"string"},"relations":{}}

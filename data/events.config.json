@@ -1,1 +1,1 @@
-{"last_id":0,"schema":{"id":"integer","name":"string","start_date":"string","duration":"integer","location_id":"integer"},"relations":{"locations":{"type":"belongsTo","keys":{"local":"location_id","foreign":"id"}}}}
+{"last_id":2,"schema":{"id":"integer","name":"string","start_date":"string","duration":"integer","location_id":"integer"},"relations":{"locations":{"type":"belongsTo","keys":{"local":"location_id","foreign":"id"}}}}

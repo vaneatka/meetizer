@@ -12,6 +12,13 @@ class EventController{
         render( "events", ['events' => $events] );
     }
 
+    public static function add(){
+        render('event-form');
+    }
+    public static function save(){
+        var_dump($_POST);
+    }
+
 }
 
 

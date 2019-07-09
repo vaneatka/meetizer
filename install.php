@@ -48,8 +48,8 @@ Db::create('tickets', /* denumire tabel*/  // acest tabel este pentru a lega use
     // schema/ clasa
     [
         'id'            => 'integer',
-        'event_id'      => 'string',
-        'user_id'       => 'string'            
+        'event_id'      => 'integer',
+        'user_id'       => 'integer'            
     ]
 );
 

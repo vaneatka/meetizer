@@ -1,1 +1,1 @@
-{"last_id":0,"schema":{"id":"integer","event_id":"string","user_id":"string"},"relations":{"users":{"type":"belongsTo","keys":{"local":"user_id","foreign":"id"}},"events":{"type":"belongsTo","keys":{"local":"event_id","foreign":"id"}}}}
+{"last_id":3,"schema":{"id":"integer","event_id":"integer","user_id":"integer"},"relations":{"users":{"type":"belongsTo","keys":{"local":"user_id","foreign":"id"}},"events":{"type":"belongsTo","keys":{"local":"event_id","foreign":"id"}}}}

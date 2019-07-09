@@ -1,0 +1,22 @@
+{% extends '/layout.html.twig' %}
+
+
+
+{% block content %}
+<h1> Events Add Form </h1>
+<h3>Add an event</h3>
+    <form action="?q=/events/save" method = 'POST'>
+    <input type="text" name = 'name' placeholder = "name">
+    <input type="text" name = 'start_date' placeholder = "start_date">
+    <input type="text" name = 'duration' placeholder = "duration">
+    <input type="text" name = 'adress' placeholder = "adress">
+    <input type="submit" value="Save">    
+    </form>
+{% endblock %}
+
+
+
+{% block actions %}
+<a href='#'>Add Your event</a>
+<a href='#'>create an account</a>
+{% endblock %}
