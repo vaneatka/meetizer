@@ -5,11 +5,32 @@
 {% block content %}
 <h1> Events Add Form </h1>
 <h3>Add an event</h3>
-    <form action="?q=/events/save" method = 'POST'>
-    <input type="text" name = 'name' placeholder = "name">
-    <input type="text" name = 'start_date' placeholder = "start_date">
-    <input type="text" name = 'duration' placeholder = "duration">
-    <input type="text" name = 'adress' placeholder = "adress">
+    <form action="?q=/events/save" method = 'POST'> 
+    <input type="text" name = 'name' placeholder = "name"><br>
+<div style="color:red">
+    
+    {{error_name_short.error|upper}}
+    </div> 
+    <input type="date" name = 'start_date' placeholder = "start_date">  <br>
+    <div style="color:red">
+    {{error_date_past.error|upper}} 
+    
+    </div> 
+    <select name="duration"><br>
+        <option value="" disabled>select the time</option>
+        <option value="1">1</option>
+        <option value="7">7</option>
+        <option value="14">14</option>
+    </select>       <br>
+    <select name="address_country">
+    {% for code,country in countries %}
+        <option value ={{code}}>{{ country }}</option>
+    {% endfor %}
+    {# <option value="">Country</option> #}
+    </select>        <br>
+    <input type="text" name = 'address_city' placeholder = "City"><br>
+    <input type="text" name = 'address_street' placeholder = "Street"><br>
+    <input type="text" name = 'address_number' placeholder = "Number"><br>
     <input type="submit" value="Save">    
     </form>
 {% endblock %}

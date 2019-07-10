@@ -9,9 +9,7 @@ $routes = [
     '/events'=> 'EventController@index',
     '/events/add'=> 'EventController@add',
     '/events/save'=> 'EventController@save',
-    '/participants'=> 'ParticipantController@index',
-    '/participants/add'=> 'ParticipantController@add',
-    '/participants/save'=> 'ParticipantController@save',
+    '/participants'=> 'ParticipantController@index',    
     '/tickets'=> 'tickets',
 ];
 

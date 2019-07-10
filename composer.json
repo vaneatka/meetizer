@@ -4,6 +4,7 @@
         "twig/twig": "^2.11",
         "symfony/var-dumper": "^3.3",
         "symfony/debug": "^3.3",
-        "greg0/lazer-database": "^1.1"
+        "greg0/lazer-database": "^1.1",
+        "umpirsky/country-list": "^2.0"
     }
 }

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "584f94fbf91ff670195725cc06ede04f",
-    "content-hash": "f2760b6a85e201fe2cda6451e7f9efac",
+    "hash": "551435c1e147b8e7ef0febfdec7c3786",
+    "content-hash": "6b0f7fb3247404f177b74abdf0187b64",
     "packages": [
         {
             "name": "greg0/lazer-database",
@@ -413,6 +413,48 @@
                 "templating"
             ],
             "time": "2019-06-18 15:37:11"
+        },
+        {
+            "name": "umpirsky/country-list",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/umpirsky/country-list.git",
+                "reference": "05fda51cd97b3294e8175ffed06104c44b3c71d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/umpirsky/country-list/zipball/05fda51cd97b3294e8175ffed06104c44b3c71d7",
+                "reference": "05fda51cd97b3294e8175ffed06104c44b3c71d7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "slowprog/composer-copy-file": "^0.2",
+                "symfony/intl": "^4.2",
+                "umpirsky/list-generator": "^1.2"
+            },
+            "type": "library",
+            "extra": {
+                "copy-file": {
+                    "vendor/umpirsky/list-generator/Dockerfile": "./",
+                    "vendor/umpirsky/list-generator/docker-compose.yml": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Saša Stamenković",
+                    "email": "umpirsky@gmail.com"
+                }
+            ],
+            "description": "List of all countries with names and ISO 3166-1 codes in all languages and data formats.",
+            "time": "2019-04-12 14:29:29"
         }
     ],
     "packages-dev": [],

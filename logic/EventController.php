@@ -13,10 +13,29 @@ class EventController{
     }
 
     public static function add(){
-        render('event-form');
+        global $countries;
+        render('event-form', [
+            "countries" => $countries,
+            "error_date_past" => get_messages("error-date-past"),
+            "error_name_short" => get_messages("error-name-short")
+            ]
+        );
     }
     public static function save(){
-        var_dump($_POST);
+        $name = $_POST['name'] ?? "";
+        if(strlen($name)<3){
+            set_message("Name too short","error-name-short", "error");
+        }
+
+        $start_date = $_POST['start_date'] ?? "";
+        if(strtotime($start_date) < time()){
+            set_message("Wrong date","error-date-past", "error");
+        }
+
+        header('location: ?q=/events/add');
+
+        // var_dump(get_messages("error-date-past"));
+
     }
 
 }
