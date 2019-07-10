@@ -10,24 +10,24 @@ function render($template, $data =[]){
 // functia care poate inregistra mesaje in sesiune
 
 function set_message($message, $context, $status = 'success'){// status poate fi success, warning, error, notice,...
-    if(session_status() != PHP_SESSION_ACTIVE){
-        session_start();
-    }
+    session();
     $_SESSION['messages'][$context] = [$status => $message];
 }
 
 function get_messages($context, $status = "" ){
-    if(session_status() != PHP_SESSION_ACTIVE){
-        session_start();
-    }
+    session();
     return $_SESSION['messages'][$context] ?? [];
 }
 
 function has_messages($context, $status = ""){
+    session();
+    return isset($_SESSION['messages'][$context]);
+}
+
+function session(){
     if(session_status() != PHP_SESSION_ACTIVE){
         session_start();
     }
-    return isset($_SESSION['messages'][$context]);
 }
 
 
