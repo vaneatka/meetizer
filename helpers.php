@@ -16,8 +16,11 @@ function set_message($message, $context, $status = 'success'){// status poate fi
 
 function get_messages($context, $status = "" ){
     session();
-    return $_SESSION['messages'][$context] ?? [];
+    $messages = $_SESSION['messages'][$context] ?? [];
+    unset($_SESSION['messages'][$context]);
+    return $messages;
 }
+
 
 function has_messages($context, $status = ""){
     session();
