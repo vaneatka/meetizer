@@ -1,8 +1,16 @@
 <?php
     //bootstrapp
     include 'vendor/autoload.php';
+
     $countries = include 'vendor/umpirsky/country-list/data/en_US/country.php';
     // va starta tot ce poate fi necesar in aplicatie
+    
+    ///////////////// validation init //////////////////////
+    
+        use Respect\Validation\Validator as v; 
+        $v = new v();
+    
+    ///////////////// validation init //////////////////////
     
         ////////////////// Twig init   //////////////////////////////
         use \Twig\Loader\FilesystemLoader;
@@ -13,7 +21,9 @@
             'cache' => FALSE,
             'debug' => true
             ]);
-        ////////////////// Twig init   //////////////////////////////        
+        ////////////////// Twig init   //////////////////////////////          
+
+        
         
         ////////////////// Helpers init   //////////////////////////////        
         include 'helpers.php';

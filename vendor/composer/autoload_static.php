@@ -24,6 +24,10 @@ class ComposerStaticInit1eef3cdc105b2019d55bc5fdff57733c
             'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Debug\\' => 24,
         ),
+        'R' => 
+        array (
+            'Respect\\Validation\\' => 19,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -55,6 +59,10 @@ class ComposerStaticInit1eef3cdc105b2019d55bc5fdff57733c
         'Symfony\\Component\\Debug\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
+        'Respect\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/respect/validation/library',
         ),
         'Psr\\Log\\' => 
         array (

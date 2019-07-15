@@ -11,6 +11,7 @@ return array(
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
     'Symfony\\Component\\Debug\\' => array($vendorDir . '/symfony/debug'),
+    'Respect\\Validation\\' => array($vendorDir . '/respect/validation/library'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Lazer\\Test\\' => array($vendorDir . '/greg0/lazer-database/tests/src'),
     'Lazer\\' => array($vendorDir . '/greg0/lazer-database/src'),

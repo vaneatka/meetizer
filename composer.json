@@ -5,6 +5,7 @@
         "symfony/var-dumper": "^3.3",
         "symfony/debug": "^3.3",
         "greg0/lazer-database": "^1.1",
-        "umpirsky/country-list": "^2.0"
+        "umpirsky/country-list": "^2.0",
+        "respect/validation": "^1.1"
     }
 }

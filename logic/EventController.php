@@ -21,16 +21,19 @@ class EventController{
             ]
         );
     }
+
     public static function save(){
+        global $v;
         $name = $_POST['name'] ?? "";
-        if(strlen($name)<3){
+        if(!$v::stringType()->length(3, null)->validate($name)){            
             set_message("Name too short","error-name-short", "error");
         }
 
         $start_date = $_POST['start_date'] ?? "";
-        if(strtotime($start_date) < time()){
+        if(!$v::date()->between('now', null)->validate($start_date)){            
             set_message("Wrong date","error-date-past", "error");
         }
+      
 
         header('location: ?q=/events/add');
 
