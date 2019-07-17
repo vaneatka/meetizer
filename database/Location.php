@@ -2,13 +2,12 @@
 
 namespace organizer\database;
 
-class Event{
+class Location {
     public $name;
     public $start_date;
     public $duration;
     public $adress;
     public $participants = [];
-    public $tickets = [];
 
 
     public function __construct(string $name, string $start_date, int $duration, string $adress)
@@ -22,11 +21,16 @@ class Event{
     public function addParticipant($name){
         $this->participants[] = $name;
     }
+    // denumire name - string
+    // data start - start-date - string
+    // durata durations - int
+    // adresa   adress- string
+    // participanti []
 
-    public function addTicket($name){
-        $this->tickets[] = $name;
-    }
-  
+    // constructor (fara participants)
+
+    // addParticipant('Io Iooos')
+    // 
 }
 
 
