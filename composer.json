@@ -2,10 +2,13 @@
     
     "require": {
         "twig/twig": "^2.11",
-        "symfony/var-dumper": "^3.3",
         "symfony/debug": "^3.3",
         "greg0/lazer-database": "^1.1",
         "umpirsky/country-list": "^2.0",
-        "respect/validation": "^1.1"
+        "respect/validation": "^1.1",
+        "fzaninotto/faker": "^1.8"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3"
     }
 }
